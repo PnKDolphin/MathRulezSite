@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+        <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#one">Title</a></li>
+            <li><a class="menu__item" href="#two">Monomials</a></li>
+            <li><a class="menu__item" href="#three">Product and Quotient</a></li>
+            <li><a class="menu__item" href="#four">Power Rule</a></li>
+            <li><a class="menu__item" href="#five">Power of Zero Rule and Negative Exponents</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <section id="one">
+            <img src="Assets/Title.png" alt="title" id="title">
+            <h4>And Their Math Rules</h4>
+            <h5>Web-Designer, Fundemental Programmer, Spellchecker - Saul Slowinski. <br>
+                Assistant Programmer and Asset Technician - Jaxxon Einarson. <br>
+                Product and Power Rules - Ethan Coutts. <br>
+                Negative Exponent and Quotient Rules + Resident Snack Man - Jesse Soucy.
+            </h5>
+            <img src="Assets/Scroll.png" alt="scroll-down" id="scroll">
+            <div id="blur"></div> 
+            <div class="scrollbackground"></div>
+        </section>
+
+        <section id="two">
+            <h1 id="monoTitle">Monomials</h1>
+            <div class="vl"></div>
+            
+            <h2 id="monoAdd">Adding</h1>
+            <h2 id="monoSub">Subtracting</h1>
+            
+            <div class="text-background" id="monoAddRep"></div>
+            <h3 id="addRepText">2x + 5x = 2+5x</h3>
+            <div class="text-background" id="monoSubRep"></div>
+            <h3 id="subRepText">2x - 5x = 2-5x</h3>
+
+            <!--Explanation + Example-->
+            <div class="text-background" id="monoAddBG"></div>
+            <h3 id="monoAddText">Adding monomials is simple, 
+                add the coefficients of your like term while keeping
+                the variables and coefficients exactly the same! <br> <br>
+                Remember, "like terms" are terms with identical variables
+                and exponents. 
+            </h3>
+
+            <div class="text-background" id="monoSubBG"></div>
+            <h3 id="monoSubText">Similarly to the addition of 
+                monomials, subtraction is all about collecting
+                you like terms and combining them. In this case, we
+                must subtract their coefficients and leave the variables
+                and exponents alone
+            </h3>
+            <h2 id="monoAddEx">Example</h2>
+            <h3 class="equation" id="monoAddEquation">3xy + 5xy + 2y = 8xy + 2y</h3>
+            <div id="addExBG"></div>
+            <h2 id="monoSubEx">Example</h2>
+            <h3 class="equation" id="monoSubEquation">6t - 3t - 7t² = 3t - 7t²</h3>
+            <div id="SubExBG"></div>
+
+        </section>
+
+        <section id="three">
+            <!--Multiplying same letter variables will add exponents-->
+            <h1 id="ProductTitle">Product&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;   and&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;  Quotient <br> <br> Rules</h1>
+            <div class="vl"></div>
+            <div class="text-background" id="ProductRep"></div>
+            <h3 id="ProductRepText"> xᵃ ∘ xᵇ = xᵃ*ᵇ</h3>
+            <div class="text-background" id="QuotientRep"></div>
+            <h3 id="QuotientRepText"> xᵃ / xᵇ = xᵃ⁻ᵇ</h3>
+            <h3 id="ProductText">Multiplying like term variables with
+                exponents can look tricky at first. Especially expressions like
+                2³∘2⁴, which deals with larger exponent numbers. However, when
+                written out as 2∘2∘2∘2∘2∘2∘2, or 2⁷, we learn that a much
+                simpler way of thinking about these complex operations is to
+                simply add the exponents together. Remember to watch for hidden 
+                'ones' in your exponents.
+            </h3>
+            <div class="text-background" id="ProductTextBG"></div>
+
+            <h3 id="QuotientText">Dividing like term variables with exponents
+                sounds like it would be even bigger of a challenge than 
+                multiplication. However, it actually follows a very similar
+                principle! When running our operation, instead of adding
+                our exponents, we instead subtract them. For example, 3⁵ / 3²
+                would be equivalent to 3⁵⁻², or 3³.
+            </h3>
+            <div class="text-background" id="QuotientTextBG"></div>
+
+            <h3 class="equation" id="ProductEquation">3xy + 5xy + 2y = 8xy + 2y</h3>
+            <div id="ProductBG"></div>
+            <h3 class="equation" id="QuotientEquation">6t - 3t - 7t² = 3t - 7t²</h3>
+            <div id="QuotientBG"></div>
+
+            
+
+        </section>
+
+        <section id="four">
+            <h1 id="PowerTitle">The Power Rule</h1>
+            <div class="text-background" id="PowerRep"></div>
+            <h3 id="PowerRepText"> (xᵃ)ᵇ = xᵃ*ᵇ</h3>
+            <h3 id="PowerText">Applying exponents to terms that already 
+                have exponents (see example below) although intimidating,
+                is quite elementary. To find our new exponent, we simply
+                need to multiply our current exponents together to find 
+                our new one! 
+            </h3>
+            <div class="text-background" id="PowerTextBG"></div>
+
+            <h3 class="equation" id="PowerEquation">(2⁴)² = 2⁴*² = 2⁸</h3>
+            <div id="PowerBG"></div>
+
+        </section>
+
+        <section id="five">
+            <h1 id="ZeroTitle">The Power of Zero Rule</h1>
+            
+            <h3 id="ZeroText">As a rule of mathematics, any number
+                to the power of zero is equal to one. Why is that? 
+                Well its simple: <br><br>
+                
+                We know that any number divided by itself is equal to one,
+                and that every number has a hidden exponent, so we can
+                translate something like 3⁄3 to something like this:
+            </h3>
+            <img src="Equations-1.png" alt="3^1 * 3^1" id="Equation-1">
+            <h3 id="ZeroText2">However, we know from our Quotient rule that
+                the exponents in our fraction can be subtracted 
+                from eachother, which leaves us with:
+            </h3>
+            <img src="Equations-2.png" alt="3^1-^1 = 3^0 = 1" id="Equation-2">
+            <div class="text-background" id="ZeroTextBG"></div>
+
+            <div class="vl"></div>
+            <h1 id="NegTitle">The Negative Exponent Rule</h1>
+	    
+           <div class="text-background" id="NegTextBG"></div>
+        </section>
+
+    </div>
+</body>
+</html>
